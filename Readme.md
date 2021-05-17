@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Ирина](https://up.htmlacademy.ru/htmlcss/31/user/1804799).
-* Наставник: `Артур Трифонов`.
+- Студент: [Ирина](https://up.htmlacademy.ru/htmlcss/31/user/1804799).
+- Наставник: [Артур Трифонов](https://github.com/wrgraff).
 
 ---
 
