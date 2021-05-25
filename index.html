@@ -6,171 +6,200 @@
   <meta name="keywords" content="device, моноподы, селфи">
   <meta name="description" content="сайт продающий моноподы">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="header">
     <nav class="nav">
-      <a class="main-header-logo">
-        <img src="img/logo.png" width="163" height="35" alt="Логотип сайта Девайс">
+      <a class="header-logo">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
       </a>
 
       <form method="get" action="https://echo.htmlacademy.ru">
-        <label for="field-search"><img src="icons/search.png" alt="поиск"></label>
+        <label for="field-search"></label>
         <input type="text" name="search" id="field-search" placeholder="Поиск по сайту">
+        <button type="submit">НАЙТИ</button>
       </form>
 
       <section>
-        <ul>
-          <li><a href="blank.html"><img class="compare__img" src="icons/compare.png" alt="сравнить">Сравнить</a></li>
-          <li><a href="blank.html"><img class="basket__img" src="icons/basket.png" alt="корзина">Корзина</a></li>
-        </ul>
-        <a href="blank.html"><img class="person__img" src="icons/person.png" alt="">Войти</a>
+        <a href="blank.html">Войти</a>
+        <a href="blank.html">Сравнить</a>
+        <a href="blank.html">Корзина</a>
       </section>
 
       <section>
+        <h2>Каталог</h2>
+
         <a href="catalog.html"><img src="icons/cross.png" alt="каталог">Каталог товаров</a>
-        <ul>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Гарантии</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </section>
 
-      <section>
         <ul>
-          <li><a href="catalog.html">Виртуальная реальность</a></li>
-          <li><a href="catalog.html">Моноподы для селфи</a></li>
-          <li><a href="catalog.html">Экшн камеры</a></li>
-          <li><a href="catalog.html">Фитнес-браслеты</a></li>
-          <li><a href="catalog.html">Умные часы</a></li>
-          <li><a href="catalog.html">Квадракоптер</a></li>
+          <li>
+            <a href="catalog.html">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="catalog.html">Экшн 0камеры</a>
+          </li>
+          <li>
+            <a href="catalog.html">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Умные часы</a>
+          </li>
+          <li>
+            <a href="catalog.html">Квадракоптер</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="blank.html">Доставка</a>
+          </li>
+          <li>
+            <a href="blank.html">Гарантии</a>
+          </li>
+          <li>
+            <a href="blank.html">Контакты</a>
+          </li>
         </ul>
       </section>
     </nav>
 
     <section>
-      <figure>
-        <a href="#">
-          <img src="img/quadcopter.png" width="526" height="334" alt="Квадракоптер">
-        </a>
-      </figure>
+      <img src="img/quadcopter.png" width="526" height="334" alt="Квадракоптер">
 
-      <h2>Порхает как бабочка, <br> жалит как пчела!</h2>
-      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+      <p>Порхает как бабочка, жалит как пчела!</p>
+      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
         мощным лазером, замаскированным под стандартную камеру.</p>
 
       <a href="catalog.html">Подробнее</a>
 
+      <section>
+        <h2>Слайдер</h2>
+        <ul>
+          <li>
+            <img src="img/.svg" alt="слайд-1">
+          </li>
+          <li>
+            <img src="img/.svg" alt="слайд-2">
+          </li>
+          <li>
+            <img src="img/.svg" alt="слайд-3">
+          </li>
+        </ul>
+      </section>
+
       <ul>
         <li><a href="#"><img src="img/.png" alt=""></a></li>
         <li><a href="#"><img src="img/.png" alt=""></a></li>
         <li><a href="#"><img src="img/.png" alt=""></a></li>
       </ul>
 
-      <ul>
-        <li>800 м</li>
-        <p>Дальность полета</p>
-        <li>50 м</li>
-        <p>Радиус поражения</p>
-      </ul>
+      <dl>
+        <dt>800 м</dt>
+        <dd>Дальность полета</dd>
+        <dt>50 м</dt>
+        <dd>Радиус поражения</dd>
+      </dl>
     </section>
   </header>
 
   <main>
     <section>
-      <h2>Популярные товары</h2>
+      <h1>Популярные товары</h1>
       <ul>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Виртуальная реальность</h2>
           </a>
-          <h3>Виртуальная реальность</h3>
         </li>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Моноподы для селфи</h2>
           </a>
-          <h3>Моноподы для селфи</h3>
         </li>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Экшн-камеры</h2>
           </a>
-          <h3>Экшн-камеры</h3>
         </li>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Фитнес-браслеты</h2>
           </a>
-          <h3>Фитнес-браслеты</h3>
         </li>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Умные часы</h2>
           </a>
-          <h3>Умные часы</h3>
         </li>
         <li>
           <a href="catalog.html">
-            <img src="img/.png" width="160" height="160" alt="">
+            <h2>Квадрокоптеры</h2>
           </a>
-          <h3>Квадрокоптеры</h3>
         </li>
       </ul>
     </section>
 
 
     <section>
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
-        подъезду совершенно бесплатно! Ведь мы неплохо <br>
-        заработаем, поднимая его на ваш этаж.</p>
+      <section>
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему
+          подъезду совершенно бесплатно! Ведь мы неплохо
+          заработаем, поднимая его на ваш этаж.</p>
+        <a href="#">Доставка</a>
+      </section>
 
-      <ul>
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
+      <section>
+        <h2>Гарантия</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#">Гарантия</a>
+      </section>
 
-      <img src="icons/" alt="человечек">
+      <section>
+        <h2>Кредит</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <a href="#">Кредит</a>
+      </section>
     </section>
 
 
     <section>
-      <h2>Логотипы</h2>
+      <h2>Бренды</h2>
       <ul>
         <li>
-          <a href="logos.html">
-            <img src="img/logo-1.png" width="260" height="100" alt="">
+          <a href="brands.html">
+            <img src="img/brand-1.png" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li>
-          <a href="logos.html">
-            <img src="img/logo-2.png" width="260" height="100" alt="">
+          <a href="brands.html">
+            <img src="img/brand-2.png" width="260" height="100" alt="SP.GADGETS">
           </a>
         </li>
         <li>
-          <a href="logos.html">
-            <img src="img/logo-3.png" width="260" height="100" alt="">
+          <a href="brands.html">
+            <img src="img/brand-3.png" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li>
-          <a href="logos.html">
-            <img src="img/logo-4.png" width="260" height="100" alt="">
+          <a href="brands.html">
+            <img src="img/brand-4.png" width="260" height="100" alt="VIVE">
           </a>
         </li>
       </ul>
     </section>
 
     <section>
-      <H2>О нас</H2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, <br>
+      <h2>О нас</h2>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика,
         который есть в каждом из нас.</p>
 
-      <p>Мы можем доставить ваш товар в самые отдаленные точки <br>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки
         России! DEVICE работает со многими транспортными компаниями:</p>
 
       <ui>
@@ -184,183 +213,45 @@
 
     <section>
       <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
       <img src="img/map.png" width="560" height="222" alt="карта">
 
+      <section>
+        <h2>Карта</h2>
+        <img src="img/.png" width="960" height="572" alt="карта"></img>
+        <button type="button">Закрыть</button>
+      </section>
+
       <a href="#">Напишите нам</a>
 
-    </section>
-
-
-
-
-    <!--страница Каталог-->
-    <h1>Моноподы для селфи</h1>
-    <section>
-      <ul>
-        <li><a href="blank.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li>Моноподы для селфи</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Фильтр</h3>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость</legend>
-          <input type="range" min="0" max="5000" value="500" class="slider" id="myRange">
-        </fieldset>
-
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul>
-            <li>
-              <input type="checkbox" name="black" id="filter-black" checked>
-              <label for="filter-black">Чёрный</label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="white" id="filter-white">
-              <label for="filter-white">Белый</label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="blue" id="filter-blue" checked>
-              <label for="filter-blue">Синий</label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="red" id="filter-red" checked>
-              <label for="filter-red">Красный</label>
-            </li>
-
-            <li>
-              <input type="checkbox" name="pink" id="filter-pink">
-              <label for="filter-pink">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul>
-            <li>
-              <input type="radio" name="bluetooth" value="bluetooth-yes" id="filter-bluetooth-yes" checked>
-              <label for="filter-bluetooth-yes">Есть</label>
-            </li>
-
-            <li>
-              <input type="radio" name="bluetooth" value="bluetooth-not" id="filter-bluetooth-not">
-              <label for="filter-bluetooth-not">Нет</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-    </section>
-
-    <section>
-      <h3>Сортировка:</h3>
       <section>
-        <ul>
-          <li><a href="price.html">По цене</a></li>
-          <li><a href="catalog.html">По типу</a></li>
-          <li><a href="catalog.html">По популярности</a></li>
-        </ul>
+        <h2>Форма для обратной связи</h2>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
+
+          <label for="user-message">Текст письма:</label>
+          <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+
+        <section>
+          <button type="button">Закрыть</button>
+        </section>
+
       </section>
-    </section>
 
-    <section>
-      <h2>Каталог</h2>
-      <ul>
-        <li>
-          <a href="product.html">
-            <h3>Любительская селфи-палка</h3>
-            <p>
-              <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            </p>
-          </a>
-          <p>
-            1 100 руб.
-            <button type="button">В корзину</button>
-            <a href="comparison.html">Добавить к сравнению</a>
-            <!---->
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="product.html">
-            <h3>Профессиональная селфи-палка</h3>
-            <p>
-              <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            </p>
-          </a>
-          <p>
-            1 500 руб.
-            <button type="button">В корзину</button>
-            <a href="comparison.html">Добавить к сравнению</a>
-            <!---->
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="product.html">
-            <h3>Непотопляемая селфи-палка</h3>
-            <p>
-              <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </p>
-          </a>
-          <p>
-            1 500 руб.
-            <button type="button">В корзину</button>
-            <a href="comparison.html">Добавить к сравнению</a>
-            <!---->
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="product.html">
-            <h3>Селфи-палка «Следуй за мной»</h3>
-            <p>
-              <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            </p>
-          </a>
-          <p>
-            1 900 руб.
-            <button type="button">В корзину</button>
-            <a href="comparison.html">Добавить к сравнению</a>
-            <!---->
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <p><a href="#">назад</a></p>
-        <li>
-          <a>1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <p><a href="#">вперед</a></p>
-      </ul>
     </section>
 
   </main>
 
-  <footer class="main-footer">
-    <a class="main-footer-logo">
+  <footer class="footer">
+    <a class="footer-logo">
       <img src="img/logo.png" width="163" height="35" alt="Логотип сайта Девайс">
     </a>
 
@@ -393,9 +284,11 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
+    </section>
 
-      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
 
+    <section>
       <ul>
         <li>
           <a href="#">Вконтакте</a>
@@ -408,6 +301,7 @@
         </li>
       </ul>
     </section>
+
     <p>
       Разработано:
       <a href="https://htmlacademy.ru">HTML Academy</a>
