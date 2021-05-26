@@ -7,23 +7,89 @@
   <meta name="description" content="сайт продающий моноподы">
   <title>Catalog page</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
+
 <body>
-  <a href="index.html">На главную</a>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">
+        <img src="icons/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
+      </a>
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <img src="icons/search.svg" alt="лупа">
+        <label for="field-search">Поиск по сайту</label>
+        <input type="text" name="search" id="field-search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
+
+      <section>
+        <a href="blank.html">Войти</a>
+        <a href="blank.html">Сравнить</a>
+        <a href="blank.html">Корзина</a>
+      </section>
+
+      <section>
+        <h2>Каталог</h2>
+
+        <a href="catalog.html"><img src="icons/plus.svg" alt="каталог">Каталог товаров</a>
+
+        <ul>
+          <li>
+            <a href="catalog.html">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="catalog.html">Экшн 0камеры</a>
+          </li>
+          <li>
+            <a href="catalog.html">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Умные часы</a>
+          </li>
+          <li>
+            <a href="catalog.html">Квадракоптер</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="blank.html">Доставка</a>
+          </li>
+          <li>
+            <a href="blank.html">Гарантии</a>
+          </li>
+          <li>
+            <a href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
 
   <main>
     <h1>Моноподы для селфи</h1>
     <section>
+      <h2>переход на страницы сайта</h2>
       <ul>
-        <li><a href="blank.html">Главная</a></li>
+        <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
       </ul>
     </section>
 
     <section>
-      <h3>Фильтр</h3>
+      <h2>Фильтр</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость</legend>
@@ -79,87 +145,70 @@
     </section>
 
     <section>
-      <h3>Сортировка:</h3>
-      <section>
-        <ul>
-          <li><a href="catalog.html">По цене</a></li>
-          <li><a href="catalog.html">По типу</a></li>
-          <li><a href="catalog.html">По популярности</a></li>
-        </ul>
-      </section>
+      <h2>Сортировка:</h2>
+      <ul>
+        <li><a href="catalog.html">По цене</a></li>
+        <li><a href="catalog.html">По типу</a></li>
+        <li><a href="catalog.html">По популярности</a></li>
+      </ul>
+      <img src="icons/arrow_up.svg" alt="стрелка вверх">
+      <img src="icons/arrow_down.svg" alt="стрелка вниз">
     </section>
 
     <section>
       <h2>Каталог</h2>
       <ul>
         <li>
-          <a href="catalog.html">
+          <img src="img/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
+          <a href="blank.html">
             <h3>Любительская селфи-палка</h3>
-            <p>
-              <img src="img/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
-            </p>
           </a>
           <p>
             1 100 руб.
-            <button type="button">В корзину</button>
-            <a href="blank.html">Добавить к сравнению</a>
-            <!---->
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-      </ul>
 
-      <ul>
         <li>
-          <a href="catalog.html">
+          <img src="img/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+          <a href="blank.html">
             <h3>Профессиональная селфи-палка</h3>
-            <p>
-              <img src="img/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-            </p>
           </a>
           <p>
             1 500 руб.
-            <button type="button">В корзину</button>
-            <a href="blank.html">Добавить к сравнению</a>
-            <!---->
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-      </ul>
 
-      <ul>
         <li>
-          <a href="catalog.html">
+          <img src="img/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <a href="blank.html">
             <h3>Непотопляемая селфи-палка</h3>
-            <p>
-              <img src="img/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </p>
           </a>
           <p>
             1 500 руб.
-            <button type="button">В корзину</button>
-            <a href="blank.html">Добавить к сравнению</a>
-            <!---->
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-      </ul>
 
-      <ul>
         <li>
-          <a href="catalog.html">
+          <img src="img/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <a href="blank.html">
             <h3>Селфи-палка «Следуй за мной»</h3>
-            <p>
-              <img src="img/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            </p>
           </a>
           <p>
             1 900 руб.
-            <button type="button">В корзину</button>
-            <a href="blank.html">Добавить к сравнению</a>
-            <!---->
           </p>
+          <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
       </ul>
 
       <section>
+        <h2>нумерация страниц</h2>
         <a href="#">назад</a>
         <ul>
           <li>

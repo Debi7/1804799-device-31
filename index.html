@@ -7,19 +7,25 @@
   <meta name="description" content="сайт продающий моноподы">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
   <header class="header">
     <nav class="nav">
-      <a class="header-logo">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
+      <a href="#">
+        <img src="icons/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
       </a>
 
       <form method="get" action="https://echo.htmlacademy.ru">
-        <label for="field-search"></label>
+        <img src="icons/search.svg" alt="лупа">
+        <label for="field-search">Поиск по сайту</label>
         <input type="text" name="search" id="field-search" placeholder="Поиск по сайту">
-        <button type="submit">НАЙТИ</button>
+        <button type="submit">Найти</button>
       </form>
 
       <section>
@@ -31,7 +37,7 @@
       <section>
         <h2>Каталог</h2>
 
-        <a href="catalog.html"><img src="icons/cross.png" alt="каталог">Каталог товаров</a>
+        <a href="catalog.html"><img src="icons/plus.svg" alt="каталог">Каталог товаров</a>
 
         <ul>
           <li>
@@ -69,76 +75,127 @@
     </nav>
 
     <section>
-      <img src="img/quadcopter.png" width="526" height="334" alt="Квадракоптер">
-
-      <p>Порхает как бабочка, жалит как пчела!</p>
-      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
-        мощным лазером, замаскированным под стандартную камеру.</p>
-
-      <a href="catalog.html">Подробнее</a>
+      <h2>три сменяемых слайда</h2>
 
       <section>
-        <h2>Слайдер</h2>
-        <ul>
-          <li>
-            <img src="img/.svg" alt="слайд-1">
-          </li>
-          <li>
-            <img src="img/.svg" alt="слайд-2">
-          </li>
-          <li>
-            <img src="img/.svg" alt="слайд-3">
-          </li>
-        </ul>
+        <h3>слайд 3</h3>
+
+        <a href="catalog.html">
+          <img src="img/quadcopter.png" width="526" height="334" alt="Квадракоптер">
+        </a>
+
+        <p>Порхает как бабочка, жалит как пчела!</p>
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+          мощным лазером, замаскированным под стандартную камеру.</p>
+
+        <a href="catalog.html">Подробнее</a>
+
+        <dl>
+          <dt>800 м</dt>
+          <dd>Дальность полета</dd>
+          <dt>50 м</dt>
+          <dd>Радиус поражения</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>слайд 2</h3>
+
+        <a href="catalog.html">
+          <img src="img/.png" width="345" height="485" alt="Фитнес браслет">
+        </a>
+
+        <p>Худеем
+          правильно!</p>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+          не пропускать занятия и соблюдать диету.</p>
+
+        <a href="catalog.html">Подробнее</a>
+
+        <dl>
+          <dt>48 часов</dt>
+          <dd>без подзарядки</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>слайд 1</h3>
+
+        <a href="catalog.html">
+          <img src="img/ .png" width="384" height="486" alt="Cелфи-палка">
+        </a>
+
+        <p>Делай селфи,
+          как Бен Стиллер!</p>
+        <p>Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+        <a href="catalog.html">Подробнее</a>
+
+        <dl>
+          <dt>8,5 м</dt>
+          <dd>Длина палки</dd>
+          <dt>5 кг</dt>
+          <dd>Вес палки</dd>
+          <dt>Карбон</dt>
+          <dd>Материал</dd>
+        </dl>
       </section>
 
       <ul>
-        <li><a href="#"><img src="img/.png" alt=""></a></li>
-        <li><a href="#"><img src="img/.png" alt=""></a></li>
-        <li><a href="#"><img src="img/.png" alt=""></a></li>
+        <li>
+          <button type="button"></button>
+        </li>
+        <li>
+          <button type="button"></button>
+        </li>
+        <li>
+          <button type="button"></button>
+        </li>
       </ul>
 
-      <dl>
-        <dt>800 м</dt>
-        <dd>Дальность полета</dd>
-        <dt>50 м</dt>
-        <dd>Радиус поражения</dd>
-      </dl>
     </section>
+
   </header>
 
   <main>
     <section>
-      <h1>Популярные товары</h1>
+      <h2>Популярные товары</h2>
       <ul>
         <li>
+          <img src="icons/popular-device1.svg" alt="очки">
           <a href="catalog.html">
-            <h2>Виртуальная реальность</h2>
+            <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li>
+          <img src="icons/popular-device2.svg" alt="моноподы">
           <a href="catalog.html">
-            <h2>Моноподы для селфи</h2>
+            <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li>
+          <img src="icons/popular-device3.svg" alt="камеры">
           <a href="catalog.html">
-            <h2>Экшн-камеры</h2>
+            <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li>
+          <img src="icons/popular-device4.svg" alt="браслеты">
           <a href="catalog.html">
-            <h2>Фитнес-браслеты</h2>
+            <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li>
+          <img src="icons/popular-device5.svg" alt="часы">
           <a href="catalog.html">
-            <h2>Умные часы</h2>
+            <h3>Умные часы</h3>
           </a>
         </li>
         <li>
+          <img src="icons/popular-device6.svg" alt="квадрокоптеры">
           <a href="catalog.html">
-            <h2>Квадрокоптеры</h2>
+            <h3>Квадрокоптеры</h3>
           </a>
         </li>
       </ul>
@@ -146,24 +203,39 @@
 
 
     <section>
+      <h2>Условия</h2>
+
+      <ul>
+        <li>
+          <button type="button">Доставка</button>
+        </li>
+        <li>
+          <button type="button">Гарантия</button>
+        </li>
+        <li>
+          <button type="button">Кредит</button>
+        </li>
+      </ul>
+
       <section>
-        <h2>Доставка</h2>
+        <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему
           подъезду совершенно бесплатно! Ведь мы неплохо
           заработаем, поднимая его на ваш этаж.</p>
-        <a href="#">Доставка</a>
       </section>
 
       <section>
-        <h2>Гарантия</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#">Гарантия</a>
+        <h3>Гарантия</h3>
+        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+          не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.</p>
       </section>
 
       <section>
-        <h2>Кредит</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#">Кредит</a>
+        <h3>Кредит</h3>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты
+          подберут для вас наиболее выгодные
+          условия кредита. Выгодные для нашего банка, разумеется.</p>
       </section>
     </section>
 
@@ -172,22 +244,22 @@
       <h2>Бренды</h2>
       <ul>
         <li>
-          <a href="brands.html">
+          <a href="blank.html">
             <img src="img/brand-1.png" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li>
-          <a href="brands.html">
+          <a href="blank.html">
             <img src="img/brand-2.png" width="260" height="100" alt="SP.GADGETS">
           </a>
         </li>
         <li>
-          <a href="brands.html">
+          <a href="blank.html">
             <img src="img/brand-3.png" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li>
-          <a href="brands.html">
+          <a href="blank.html">
             <img src="img/brand-4.png" width="260" height="100" alt="VIVE">
           </a>
         </li>
@@ -217,34 +289,7 @@
         проверить работоспособность покупки. Всякое бывает.</p>
       <img src="img/map.png" width="560" height="222" alt="карта">
 
-      <section>
-        <h2>Карта</h2>
-        <img src="img/.png" width="960" height="572" alt="карта"></img>
-        <button type="button">Закрыть</button>
-      </section>
-
       <a href="#">Напишите нам</a>
-
-      <section>
-        <h2>Форма для обратной связи</h2>
-        <form method="post" action="https://echo.htmlacademy.ru">
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
-
-          <label for="user-email">Ваш e-mail:</label>
-          <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
-
-          <label for="user-message">Текст письма:</label>
-          <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
-
-          <button type="submit">Отправить</button>
-        </form>
-
-        <section>
-          <button type="button">Закрыть</button>
-        </section>
-
-      </section>
 
     </section>
 
@@ -308,6 +353,30 @@
     </p>
 
   </footer>
+
+  <!--модальные окна-->
+  <section>
+    <h2>Карта</h2>
+    <img src="img/.png" width="960" height="572" alt="карта">
+    <button type="button">Закрыть</button>
+  </section>
+
+  <section>
+    <h2>Форма для обратной связи</h2>
+    <form method="post" action="https://echo.htmlacademy.ru">
+      <label for="user-name">Ваше имя:</label>
+      <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+
+      <label for="user-email">Ваш e-mail:</label>
+      <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
+
+      <label for="user-message">Текст письма:</label>
+      <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 
 </body>
 
