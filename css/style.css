@@ -1,4 +1,26 @@
-/*.main-header{
+/*@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-style: normal;  bold?!
+  font-display: swap;
+  src:
+      url('../fonts/gilroyextrabold.woff2') format('woff2'),
+      url('../fonts/gilroyextrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+      url('../fonts/opensans.woff2') format('woff2'),
+      url('../fonts/opensans.woff') format('woff');
+}
+
+
+
+.main-header{
   margin: auto;
   margin-top: 40px;
   width: 1160px;
