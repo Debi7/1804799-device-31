@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
@@ -37,13 +38,13 @@
       <section class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="login-link" href="blank.html">Войти</a>
+            <a class="nav-link nav-link-login" href="blank.html">Войти</a>
           </li>
           <li class="nav-item">
-            <a class="compare-link" href="blank.html">Сравнить</a>
+            <a class="nav-link nav-link-compare" href="blank.html">Сравнить</a>
           </li>
           <li class="nav-item">
-            <a class="basket-link" href="blank.html">Корзина</a>
+            <a class="nav-link nav-link-basket" href="blank.html">Корзина</a>
           </li>
         </ul>
       </section>
@@ -59,7 +60,7 @@
             <a href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="product-item">
-            <a href="catalog.html">Экшн 0камеры</a>
+            <a href="catalog.html">Экшн-камеры</a>
           </li>
           <li class="product-item">
             <a href="catalog.html">Фитнес-браслеты</a>
@@ -72,15 +73,15 @@
           </li>
         </ul>
 
-        <ul class="conditions">
-          <li class="conditions-item">
-            <a class="conditions-span" href="blank.html">Доставка</a>
+        <ul class="site-menu">
+          <li class="menu-item">
+            <a href="blank.html">Доставка</a>
           </li>
-          <li class="conditions-item">
-            <a class="conditions-span" href="blank.html">Гарантии</a>
+          <li class="menu-item">
+            <a href="blank.html">Гарантии</a>
           </li>
-          <li class="conditions-item">
-            <a class="conditions-span" href="blank.html">Контакты</a>
+          <li class="menu-item">
+            <a href="blank.html">Контакты</a>
           </li>
         </ul>
       </section>
@@ -90,64 +91,64 @@
   <main class="container">
     <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог товаров</a></li>
-      <li>Моноподы для селфи</li>
+      <li class="breadcrumbs-text"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs-text"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="breadcrumbs-text">Моноподы для селфи</li>
     </ul>
 
-    <section class="form">
-      <h2>Фильтр</h2>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="range">
-          <legend class="range-p">Стоимость</legend>
+    <section class="options">
+      <h2 class="options-text">Фильтр</h2>
+      <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-range">
+          <legend class="range-price">Стоимость</legend>
           <input type="range" min="0" max="5000" value="500" class="slider" id="myRange">
         </fieldset>
 
         <fieldset class="filter-color">
-          <legend class="color-p">Цвет</legend>
+          <legend class="color-name">Цвет</legend>
           <ul class="color-list">
-            <li class="color-item">
+            <li class="color-item checkbox">
               <input type="checkbox" name="black" id="filter-black" checked>
-              <label for="filter-black">Чёрный</label>
+              <label class="color-choice" for="filter-black">Чёрный</label>
             </li>
 
-            <li class="color-item">
+            <li class="color-item checkbox">
               <input type="checkbox" name="white" id="filter-white">
-              <label for="filter-white">Белый</label>
+              <label class="color-choice" for="filter-white">Белый</label>
             </li>
 
-            <li class="color-item">
+            <li class="color-item checkbox">
               <input type="checkbox" name="blue" id="filter-blue" checked>
-              <label for="filter-blue">Синий</label>
+              <label class="color-choice" for="filter-blue">Синий</label>
             </li>
 
-            <li class="color-item">
+            <li class="color-item checkbox">
               <input type="checkbox" name="red" id="filter-red" checked>
-              <label for="filter-red">Красный</label>
+              <label class="color-choice" for="filter-red">Красный</label>
             </li>
 
-            <li class="color-item">
+            <li class="color-item checkbox">
               <input type="checkbox" name="pink" id="filter-pink">
-              <label for="filter-pink">Розовый</label>
+              <label class="color-choice" for="filter-pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="bluetooth">
-          <legend class="bluetooth-p">Bluetooth</legend>
+        <fieldset class="filter-bluetooth">
+          <legend class="bluetooth">Bluetooth</legend>
           <ul class="bluetooth-list">
-            <li class="bluetooth-item">
+            <li class="bluetooth-item radio">
               <input type="radio" name="bluetooth" value="bluetooth-yes" id="filter-bluetooth-yes" checked>
-              <label for="filter-bluetooth-yes">Есть</label>
+              <label class="bluetooth-choice" for="filter-bluetooth-yes">Есть</label>
             </li>
 
-            <li class="bluetooth-item">
+            <li class="bluetooth-item radio">
               <input type="radio" name="bluetooth" value="bluetooth-not" id="filter-bluetooth-not">
-              <label for="filter-bluetooth-not">Нет</label>
+              <label class="bluetooth-choice" for="filter-bluetooth-not">Нет</label>
             </li>
           </ul>
         </fieldset>
-        <button class="btn" type="submit">Показать</button>
+        <button class="btn-yellow" type="submit">Показать</button>
       </form>
     </section>
 
@@ -158,82 +159,84 @@
         <li class="sorting-item"><a href="catalog.html">По типу</a></li>
         <li class="sorting-item"><a href="catalog.html">По популярности</a></li>
       </ul>
-      <a class="arrowUp" href="#"><img src="icons/arrow_up.svg" alt="стрелка вверх"></a>
-      <a class="arrowDown" href="#"><img src="icons/arrow_down.svg" alt="стрелка вниз"></a>
+      <a class="arrow-up" href="#"><img src="icons/arrow_up.svg" alt="стрелка вверх"></a>
+      <a class="arrow-down" href="#"><img src="icons/arrow_down.svg" alt="стрелка вниз"></a>
     </section>
 
     <section class="catalog">
       <h2>Каталог</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <img class="stick1" src="img/stick_tel.jpg" width="360" height="380" alt="Любительская селфи-палка">
+          <img class="catalog-product" src="img/stick_tel.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <a href="blank.html">
             <h3>Любительская селфи-палка</h3>
           </a>
-          <p class="stick1-p">
+          <p class="product-price">
             1 100 руб.
           </p>
-          <a class="btn-basket" href="#">В корзину</a>
-          <a class="btn-compare" href="#">Добавить к сравнению</a>
+          <a class="btn-yellow" href="#">В корзину</a>
+          <a class="compare-add" href="#">Добавить к сравнению</a>
         </li>
 
         <li class="catalog-item">
-          <img class="stick2" src="img/stick_prof.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <img class="catalog-product" src="img/stick_prof.jpg" width="360" height="380"
+            alt="Профессиональная селфи-палка">
           <a href="blank.html">
             <h3>Профессиональная селфи-палка</h3>
           </a>
-          <p class="stick2-p">
+          <p class="product-price">
             1 500 руб.
           </p>
-          <a class="btn-basket" href="#">В корзину</a>
-          <a class="btn-compare" href="#">Добавить к сравнению</a>
+          <a class="btn-yellow" href="#">В корзину</a>
+          <a class="compare-add" href="#">Добавить к сравнению</a>
         </li>
 
         <li class="catalog-item">
-          <img class="stick3" src="img/stick_yellow.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <img class="catalog-product" src="img/stick_yellow.jpg" width="360" height="380"
+            alt="Непотопляемая селфи-палка">
           <a href="blank.html">
             <h3>Непотопляемая селфи-палка</h3>
           </a>
-          <p class="stick3-p">
+          <p class="product-price">
             1 500 руб.
           </p>
-          <a class="btn-basket" href="#">В корзину</a>
-          <a class="btn-compare" href="#">Добавить к сравнению</a>
+          <a class="btn-yellow" href="#">В корзину</a>
+          <a class="compare-add" href="#">Добавить к сравнению</a>
         </li>
 
         <li class="catalog-item">
-          <img class="stick4" src="img/stick_hand.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <img class="catalog-product" src="img/stick_hand.jpg" width="360" height="380"
+            alt="Селфи-палка «Следуй за мной»">
           <a href="blank.html">
             <h3>Селфи-палка «Следуй за мной»</h3>
           </a>
-          <p class="stick4-p">
+          <p class="product-price">
             1 900 руб.
           </p>
-          <a class="btn-basket" href="#">В корзину</a>
-          <a class="btn-compare" href="#">Добавить к сравнению</a>
+          <a class="btn-yellow" href="#">В корзину</a>
+          <a class="compare-add" href="#">Добавить к сравнению</a>
         </li>
       </ul>
 
-      <a class="button-back" href="#">назад</a>
-      <ul class="page-list">
-        <li class="page-item">
-          <a class="page-number"> 1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-number" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-number" href="#">3</a>
-        </li>
-      </ul>
-      <a class="button-next" href="#">вперед</a>
+      <section class="pages">
+        <a class="button" href="#">назад</a>
+        <ul class="page-list">
+          <li class="page-item">
+            <a class="page-number">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-number" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-number" href="#">3</a>
+          </li>
+        </ul>
+        <a class="button" href="#">вперед</a>
+      </section>
 
     </section>
 
   </main>
-
-
-
 
   <footer class="main-footer">
     <a class="footer-logo">
@@ -243,13 +246,13 @@
     <section class="footer-navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="login-link" href="blank.html">Войти</a>
+          <a class="nav-link nav-link-icon" href="blank.html">Войти</a>
         </li>
         <li class="navigation-item">
-          <a class="compare-link" href="blank.html">Сравнить</a>
+          <a class="nav-link nav-link-icon" href="blank.html">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <a class="basket-link" href="blank.html">Корзина</a>
+          <a class="nav-link nav-link-icon" href="blank.html">Корзина</a>
         </li>
       </ul>
     </section>
@@ -257,15 +260,15 @@
     <p class="footer-address">Санкт-Петербург, набережная <br>
       реки Карповки, 5, литера П.</p>
 
-    <section class="conditions">
-      <ul class="conditions-list">
-        <li class="conditions-item">
+    <section class="footer-menu">
+      <ul class="footer-menu-list">
+        <li class="footer-menu-item">
           <a href="blank.html">Доставка</a>
         </li>
-        <li class="conditions-item">
+        <li class="footer-menu-item">
           <a href="blank.html">Гарантии</a>
         </li>
-        <li class="conditions-item">
+        <li class="footer-menu-item">
           <a href="blank.html">Контакты</a>
         </li>
       </ul>
@@ -276,20 +279,20 @@
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-btn" href="#"><img src="icons/icon_witter.svg" alt="Вконтакте">Вконтакте</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </li>
         <li class="social-item">
-          <a class="social-btn" href="#"><img src="icons/icon_facebook.svg" alt="Фейсбук">Фейсбук</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         </li>
         <li class="social-item">
-          <a class="social-btn" href="#"><img src="icons/icon_instagram.svg" alt="Инстаграм">Инстаграм</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
 
     <p class="footer-copyright">
       Разработано:
-      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="developed" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
 
   </footer>
