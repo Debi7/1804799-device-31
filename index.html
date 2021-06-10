@@ -16,14 +16,14 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon/icon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
 
-  <header class="main-header">
+  <header class="main-header container">
 
     <nav class="main-nav">
       <a class="main-header-logo">
@@ -33,7 +33,7 @@
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
         <label for="field-search" hidden>Поиск по сайту</label>
         <input class="search-text" type="text" name="search" id="field-search" placeholder="Поиск по сайту">
-        <button class="btn" type="submit">Найти</button>
+        <button class="btn-search" type="submit">Найти</button>
       </form>
 
       <section class="header-nav">
@@ -50,41 +50,42 @@
         </ul>
       </section>
 
-      <section class="catalog">
-        <a class="catalog-product" href="catalog.html"><img src="icons/plus.svg" alt="каталог">Каталог товаров</a>
+      <section class="catalog-product">
 
         <div class="catalog-content">
-          <ul class="product-menu">
-            <li class="product-item">
-              <a href="catalog.html">Виртуальная реальность</a>
+          <a class="topmenu" href="catalog.html"><img src="icons/plus.svg" alt="каталог">Каталог товаров</a>
+
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Виртуальная реальность</a>
             </li>
-            <li class="product-item">
-              <a href="catalog.html">Моноподы для селфи</a>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li class="product-item">
-              <a href="catalog.html">Экшн-камеры</a>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Экшн-камеры</a>
             </li>
-            <li class="product-item">
-              <a href="catalog.html">Фитнес-браслеты</a>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Фитнес-браслеты</a>
             </li>
-            <li class="product-item">
-              <a href="catalog.html">Умные часы</a>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Умные часы</a>
             </li>
-            <li class="product-item">
-              <a href="catalog.html">Квадракоптер</a>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Квадракоптер</a>
             </li>
           </ul>
         </div>
 
         <ul class="site-menu">
           <li class="menu-item">
-            <a href="blank.html">Доставка</a>
+            <a class="menu-link" href="blank.html">Доставка</a>
           </li>
           <li class="menu-item">
-            <a href="blank.html">Гарантии</a>
+            <a class="menu-link" href="blank.html">Гарантии</a>
           </li>
           <li class="menu-item">
-            <a href="blank.html">Контакты</a>
+            <a class="menu-link" href="blank.html">Контакты</a>
           </li>
         </ul>
       </section>
@@ -99,7 +100,7 @@
       <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен
         мощным лазером, замаскированным под стандартную камеру.</p>
 
-      <a class="btn-yellow" href="catalog.html">Подробнее</a>
+      <a class="btn" href="catalog.html">Подробнее</a>
 
       <dl class="characteristics">
         <dt class="characteristics-item">800 м</dt>
@@ -119,7 +120,7 @@
       <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
         не пропускать занятия и соблюдать диету.</p>
 
-      <a class="btn-yellow" href="catalog.html">Подробнее</a>
+      <a class="btn" href="catalog.html">Подробнее</a>
 
       <dl class="characteristics">
         <dt class="characteristics-item">48 часов</dt>
@@ -137,7 +138,7 @@
       <p class="description">Самая длинная палка для селфи доступна в нашем магазине.
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
-      <a class="btn-yellow" href="catalog.html">Подробнее</a>
+      <a class="btn" href="catalog.html">Подробнее</a>
 
       <dl class="characteristics">
         <dt class="characteristics-item">8,5 м</dt>
@@ -151,13 +152,19 @@
 
     <ul class="slider-btn">
       <li class="slider-change">
-        <button type="button">Показать слайд с квадрокоптером</button>
+        <button class="btn-change" type="button">
+          <h2 hidden>Показать слайд с квадрокоптером</h2>
+        </button>
       </li>
       <li class="slider-change">
-        <button type="button">Показать слайд с Фитнес браслетом</button>
+        <button class="btn-change" type="button">
+          <h2 hidden>Показать слайд с Фитнес браслетом</h2>
+        </button>
       </li>
       <li class="slider-change">
-        <button type="button">Показать слайд с Селфи-палкой</button>
+        <button class="btn-change" type="button">
+          <h2 hidden>Показать слайд с Селфи-палкой</h2>
+        </button>
       </li>
     </ul>
 
@@ -165,44 +172,39 @@
 
   </header>
 
-  <main class="container">
-    <h1>Магазин гаджетов Device</h1>
 
+  <main class="main-container">
+
+    <h1 hidden>Магазин гаджетов Device</h1>
     <section class="popular-device">
-      <h2>Популярные товары</h2>
+      <h2 hidden>Популярные товары</h2>
       <ul class="device-list">
         <li class="device-item">
-          <img src="icons/popular-device1.svg" alt="очки">
           <a href="catalog.html">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li class="device-item">
-          <img src="icons/popular-device2.svg" alt="моноподы">
           <a href="catalog.html">
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li class="device-item">
-          <img src="icons/popular-device3.svg" alt="камеры">
           <a href="catalog.html">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li class="device-item">
-          <img src="icons/popular-device4.svg" alt="браслеты">
           <a href="catalog.html">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li class="device-item">
-          <img src="icons/popular-device5.svg" alt="часы">
           <a href="catalog.html">
             <h3>Умные часы</h3>
           </a>
         </li>
         <li class="device-item">
-          <img src="icons/popular-device6.svg" alt="квадрокоптеры">
           <a href="catalog.html">
             <h3>Квадрокоптеры</h3>
           </a>
@@ -210,46 +212,46 @@
       </ul>
     </section>
 
-
     <section class="conditions">
-      <h2>Условия</h2>
+      <h2 hidden>Условия</h2>
+      <div class="conditions-container">
+        <ul class="conditions-menu">
+          <li class="conditions-item">
+            <button class="btn" type="button">Доставка</button>
+          </li>
+          <li class="conditions-item">
+            <button class="btn" type="button">Гарантия</button>
+          </li>
+          <li class="conditions-item">
+            <button class="btn" type="button">Кредит</button>
+          </li>
+        </ul>
 
-      <ul class="conditions-menu">
-        <li class="conditions-item">
-          <button class="btn-yellow" type="btn">Доставка</button>
-        </li>
-        <li class="conditions-item">
-          <button class="btn-yellow" type="btn">Гарантия</button>
-        </li>
-        <li class="conditions-item">
-          <button class="btn-yellow" type="btn">Кредит</button>
-        </li>
-      </ul>
+        <section class="conditions-content">
+          <h3 class="conditions-heading">Доставка</h3>
+          <p class="conditions-text">Мы с удовольствием доставим ваш товар прямо к вашему
+            подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.</p>
+        </section>
 
-      <section class="conditions-content">
-        <h3 class="conditions-heading">Доставка</h3>
-        <p class="conditions-text">Мы с удовольствием доставим ваш товар прямо к вашему
-          подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.</p>
-      </section>
+        <section class="conditions-content">
+          <h3 class="conditions-heading">Гарантия</h3>
+          <p class="conditions-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+            не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</p>
+        </section>
 
-      <section class="conditions-content">
-        <h3 class="conditions-heading">Гарантия</h3>
-        <p class="conditions-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-          не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же.</p>
-      </section>
-
-      <section class="conditions-content">
-        <h3 class="conditions-heading">Кредит</h3>
-        <p class="conditions-text">Залезть в долговую яму стало проще! Кредитные консультанты
-          подберут для вас наиболее выгодные
-          условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </section>
+        <section class="conditions-content">
+          <h3 class="conditions-heading">Кредит</h3>
+          <p class="conditions-text">Залезть в долговую яму стало проще! Кредитные консультанты
+            подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </section>
+      </div>
     </section>
 
     <section class="brands">
-      <h2>Бренды</h2>
+      <h2 hidden>Бренды</h2>
       <ul class="brands-list">
         <li class="brands-item">
           <a href="blank.html">
@@ -287,7 +289,7 @@
         <li class="about-us-item">Автотрейдинг</li>
         <li class="about-us-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="btn-yellow" href="catalog.html">Подробнее о нас</a>
+      <a class="btn" href="catalog.html">Подробнее о нас</a>
 
     </section>
 
@@ -297,7 +299,7 @@
         проверить работоспособность покупки. Всякое бывает.</p>
       <img src="img/map.png" width="560" height="222" alt="карта">
 
-      <a class="btn-yellow" href="#">Напишите нам</a>
+      <a class="btn" href="#">Напишите нам</a>
 
     </section>
 
@@ -305,7 +307,7 @@
 
   <footer class="main-footer">
     <a class="footer-logo">
-      <img src="icons/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
+      <img src="icons/logo-footer.svg" width="163" height="35" alt="Логотип сайта Девайс">
     </a>
 
     <section class="footer-navigation">
@@ -328,13 +330,13 @@
     <section class="footer-menu">
       <ul class="footer-menu-list">
         <li class="footer-menu-item">
-          <a href="blank.html">Доставка</a>
+          <a class="footer-menu-link" href="blank.html">Доставка</a>
         </li>
         <li class="footer-menu-item">
-          <a href="blank.html">Гарантии</a>
+          <a class="footer-menu-link" href="blank.html">Гарантии</a>
         </li>
         <li class="footer-menu-item">
-          <a href="blank.html">Контакты</a>
+          <a class="footer-menu-link" href="blank.html">Контакты</a>
         </li>
       </ul>
     </section>
@@ -344,46 +346,55 @@
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-vk" href="#">
+            <h2 hidden>Вконтакте</h2>VK
+          </a>
         </li>
         <li class="social-item">
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-fb" href="#">
+            <h2 hidden>Фейсбук</h2>FB
+          </a>
         </li>
         <li class="social-item">
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-inst" href="#">
+            <h2 hidden>Инстаграм</h2>instagram
+          </a>
         </li>
       </ul>
     </section>
 
     <p class="footer-copyright">
-      Разработано:
+      <h2 hidden>Разработано:</h2>
       <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
 
   </footer>
 
   <section class="modal modal-map">
-    <h2>Карта</h2>
+    <h2 hidden>Карта</h2>
     <img class="map-img" src="img/map-big.png" width="960" height="572" alt="карта">
-    <button class="map-btn" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <h2 hidden>Закрыть</h2>
+    </button>
   </section>
 
   <section class="modal modal-feedback">
-    <h2>Форма для обратной связи</h2>
+    <h2 hidden>Форма для обратной связи</h2>
     <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
-      <label class="feedback-text" for="user-name">Ваше имя:</label>
-      <input class="user-form name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+      <label class="field-text" for="user-name">Ваше имя:</label>
+      <input class="field-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
 
-      <label class="feedback-text" for="user-email">Ваш e-mail:</label>
-      <input class="user-form email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
+      <label class="field-text" for="user-email">Ваш e-mail:</label>
+      <input class="field-input" type="email" name="user-email" id="user-email" placeholder="email@example.com">
 
-      <label class="feedback-text" for="user-message">Текст письма:</label>
-      <textarea class="user-form message" name="user-message" id="user-message"
-        placeholder="В свободной форме"></textarea>
+      <label class="field-text" for="user-message">Текст письма:</label>
+      <textarea class="field-input" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
 
       <button class="btn" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <h2 hidden>Закрыть</h2>
+    </button>
   </section>
 
 </body>
