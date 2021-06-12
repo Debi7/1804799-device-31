@@ -82,8 +82,6 @@
 
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 a {
@@ -106,10 +104,14 @@ img {
 .main-header {
   margin: auto;
   margin-top: 40px;
+  margin-bottom: 116px;
 }
 
 /*блок желтый с меню*/
 .main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
   height: 300px;
   padding-left: 60px;
   background-color: var(--special-yellow-light);
@@ -117,6 +119,8 @@ img {
 
 /*logo хедер*/
 .main-header-logo {
+  width: 163px;
+  height: 34px;
   margin-top: -20px;
 }
 
@@ -129,9 +133,15 @@ img {
   opacity: 0.3;
 }
 
-/*форма поиска*/
+/*форма поиска с кнопкой найти*/
 .search {
-  margin-top: 65px;
+  grid-column-start: 1;
+  grid-column: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+width: 440px;
+height: 50px;
+margin-bottom: 50px;
 }
 
 /*иконка формы поиска*/
@@ -171,6 +181,8 @@ img {
 }
 
 .btn-search:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-out;
   border: none;
   background-color: var(--basic-black);
   color: var(--basic-white);
@@ -184,21 +196,22 @@ img {
 
 /*блок header-nav с войти/сравнить/корзина*/
 .header-nav {
-  width: 497px;
-  height: 20px;
-  margin: 0 auto;
-  margin-top: 44px;
-  margin-left: 102px;
+  grid-column-start: 7;
+  grid-column-end: 12;
 }
 
 /*список header-nav с войти/сравнить/корзина*/
 .nav-list {
   list-style: none;
+  display: inline-block;
+
 }
 
 /*каждый пункт header-nav с войти/сравнить/корзина*/
 .nav-item {
-  margin;
+  width: 498px;
+  height: 20px;
+  margin: 0 auto;
 }
 
 /*<a> ссылка с войти/сравнить/корзина*/
@@ -221,7 +234,10 @@ img {
 
 
 /*блок catalog в хедере*/
-.catalog-product {}
+.catalog-product {
+  display: grid;
+
+}
 
 
 .catalog-content {
@@ -258,7 +274,12 @@ img {
 }
 
 /*список с доставка/гарантии/контакты*/
-.site-menu {}
+.site-menu {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
 .menu-item {
   list-style: none;
@@ -276,15 +297,24 @@ img {
 
 /*блок со слайдом - картинка, слоган, описание*/
 .promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 44px;
   background-color: var(--basic-white);
 }
 
 .promo-img {
   /*картинка*/
+  margin-top: -47px;
+  margin-left: 30px;
+
 }
 
 /*слоган*/
 .tagline {
+  display: grid;
+  margin-top: -36px;
+
   font-size: 47px;
   line-height: 57px;
   font-weight: 800;
@@ -294,6 +324,8 @@ img {
 
 /*описание под слоганом*/
 .description {
+  display: grid;
+
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
