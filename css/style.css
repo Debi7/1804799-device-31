@@ -277,8 +277,7 @@ margin-bottom: 50px;
 .site-menu {
   grid-column-start: 7;
   grid-column-end: 12;
-  grid-row-start: 3;
-  grid-row-end: 4;
+
 }
 
 .menu-item {
