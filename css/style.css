@@ -135,13 +135,12 @@ img {
 
 /*форма поиска с кнопкой найти*/
 .search {
-  grid-column-start: 1;
-  grid-column: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-width: 440px;
-height: 50px;
-margin-bottom: 50px;
+  display: grid;
+  grid-column: 1/2;
+
+  width: 440px;
+  height: 50px;
+  margin-bottom: 50px;
 }
 
 /*иконка формы поиска*/
@@ -169,6 +168,7 @@ margin-bottom: 50px;
 
 /*кнопка найти в хедере*/
 .btn-search {
+  display: inline-block;
   width: 84px;
   height: 50px;
   border: solid 2px;
@@ -196,8 +196,7 @@ margin-bottom: 50px;
 
 /*блок header-nav с войти/сравнить/корзина*/
 .header-nav {
-  grid-column-start: 7;
-  grid-column-end: 12;
+  grid-column: 5/6;
 }
 
 /*список header-nav с войти/сравнить/корзина*/
@@ -275,13 +274,12 @@ margin-bottom: 50px;
 
 /*список с доставка/гарантии/контакты*/
 .site-menu {
-  grid-column-start: 7;
-  grid-column-end: 12;
-
+  display: grid;
 }
 
 .menu-item {
   list-style: none;
+
 }
 
 /*каждый пункт с доставка/гарантии/контакты*/
@@ -298,12 +296,13 @@ margin-bottom: 50px;
 .promo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 44px;
   background-color: var(--basic-white);
 }
 
 .promo-img {
   /*картинка*/
+  grid-column: 1/2;
+  grid-row: 1/5;
   margin-top: -47px;
   margin-left: 30px;
 
@@ -313,7 +312,6 @@ margin-bottom: 50px;
 .tagline {
   display: grid;
   margin-top: -36px;
-
   font-size: 47px;
   line-height: 57px;
   font-weight: 800;
@@ -324,7 +322,7 @@ margin-bottom: 50px;
 /*описание под слоганом*/
 .description {
   display: grid;
-
+  grid-column: 2/3;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
