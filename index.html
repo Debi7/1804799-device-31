@@ -31,7 +31,7 @@
       </a>
 
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label for="field-search" hidden>Поиск по сайту</label>
+        <label for="field-search" class="visually-hidden">Поиск по сайту</label>
         <input class="search-text" type="text" name="search" id="field-search" placeholder="Поиск по сайту">
         <button class="btn-search" type="submit">Найти</button>
       </form>
@@ -110,7 +110,7 @@
       </dl>
     </section>
 
-  <!--<section class="promo">
+    <!--<section class="promo">
       <a class="promo-img" href="catalog.html">
         <img src="img/bracelet.png" width="345" height="485" alt="Фитнес браслет">
       </a>
@@ -153,17 +153,17 @@
     <ul class="slider-btn">
       <li class="slider-change">
         <button class="btn-change" type="button">
-          <h2 hidden>Показать слайд с квадрокоптером</h2>
+          <h2 class="visually-hidden">Показать слайд с квадрокоптером</h2>
         </button>
       </li>
       <li class="slider-change">
         <button class="btn-change" type="button">
-          <h2 hidden>Показать слайд с Фитнес браслетом</h2>
+          <h2 class="visually-hidden">Показать слайд с Фитнес браслетом</h2>
         </button>
       </li>
       <li class="slider-change">
         <button class="btn-change" type="button">
-          <h2 hidden>Показать слайд с Селфи-палкой</h2>
+          <h2 class="visually-hidden">Показать слайд с Селфи-палкой</h2>
         </button>
       </li>
     </ul>
@@ -175,9 +175,9 @@
 
   <main class="main-container">
 
-    <h1 hidden>Магазин гаджетов Device</h1>
+    <h1 class="visually-hidden">Магазин гаджетов Device</h1>
     <section class="popular-device">
-      <h2 hidden>Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="device-list">
         <li class="device-item">
           <a href="catalog.html">
@@ -213,7 +213,7 @@
     </section>
 
     <section class="conditions">
-      <h2 hidden>Условия</h2>
+      <h2 class="visually-hidden">Условия</h2>
       <div class="conditions-container">
         <ul class="conditions-menu">
           <li class="conditions-item">
@@ -234,7 +234,7 @@
             заработаем, поднимая его на ваш этаж.</p>
         </section>
 
-        <section class="conditions-content">
+        <!--<section class="conditions-content">
           <h3 class="conditions-heading">Гарантия</h3>
           <p class="conditions-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
             не переживайте, мы выдадим вам новый.
@@ -246,12 +246,12 @@
           <p class="conditions-text">Залезть в долговую яму стало проще! Кредитные консультанты
             подберут для вас наиболее выгодные
             условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+        </section>-->
       </div>
     </section>
 
     <section class="brands">
-      <h2 hidden>Бренды</h2>
+      <h2 class="visually-hidden">Бренды</h2>
       <ul class="brands-list">
         <li class="brands-item">
           <a href="blank.html">
@@ -276,33 +276,34 @@
       </ul>
     </section>
 
-    <section class="about-us">
-      <h2>О нас</h2>
-      <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика,
-        который есть в каждом из нас.</p>
+    <div class="about-us__contacts">
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.</p>
 
-      <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки
-        России! DEVICE работает со многими транспортными компаниями:</p>
+        <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями:</p>
 
-      <ul class="about-us-list">
-        <li class="about-us-item">Деловые линии</li>
-        <li class="about-us-item">Автотрейдинг</li>
-        <li class="about-us-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="btn" href="catalog.html">Подробнее о нас</a>
+        <ul class="about-us-list">
+          <li class="about-us-item">Деловые линии</li>
+          <li class="about-us-item">Автотрейдинг</li>
+          <li class="about-us-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="btn" href="catalog.html">Подробнее о нас</a>
 
-    </section>
+      </section>
 
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-        проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.png" width="560" height="222" alt="карта">
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.</p>
+        <img src="img/map.png" width="560" height="222" alt="карта">
 
-      <a class="btn" href="#">Напишите нам</a>
+        <a class="btn" href="#">Напишите нам</a>
 
-    </section>
-
+      </section>
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -346,41 +347,44 @@
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-btn social-btn-vk" href="#">
-            <h2 hidden>Вконтакте</h2>VK
-          </a>
-        </li>
-        <li class="social-item">
           <a class="social-btn social-btn-fb" href="#">
-            <img src="icons/icon_facebook.svg" alt="fb">
-            <h2 hidden>Фейсбук</h2>FB
+            <img src="icons/icon_facebook.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Фейсбук</h2>
           </a>
         </li>
         <li class="social-item">
           <a class="social-btn social-btn-inst" href="#">
-            <h2 hidden>Инстаграм</h2>instagram
+            <img src="icons/icon_instagram.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Инстаграм</h2>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-btn social-btn-twit" href="#">
+            <img src="icons/icon_twitter.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Твиттер</h2>
           </a>
         </li>
       </ul>
     </section>
 
     <p class="footer-copyright">
-      <h2 hidden>Разработано:</h2>
-      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      <h2 class="visually-hidden">Разработано:</h2>
+      <img class="logo-copyright" src="icons/logo_htmlacademy.svg" width="115" height="33" alt="HTML Academy">
+      <h2 class="visually-hidden">HTML Academy</h2>
     </p>
 
   </footer>
 
-  <section class="modal modal-map">
-    <h2 hidden>Карта</h2>
+  <!--<section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
     <img class="map-img" src="img/map-big.png" width="960" height="572" alt="карта">
     <button class="modal-close" type="button">
-      <h2 hidden>Закрыть</h2>
+      <h2 class="visually-hidden">Закрыть</h2>
     </button>
   </section>
 
   <section class="modal modal-feedback">
-    <h2 hidden>Форма для обратной связи</h2>
+    <h2 class="visually-hidden">Форма для обратной связи</h2>
     <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
       <label class="field-text" for="user-name">Ваше имя:</label>
       <input class="field-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
@@ -394,9 +398,9 @@
       <button class="btn" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">
-      <h2 hidden>Закрыть</h2>
+      <h2 class="visually-hidden">Закрыть</h2>
     </button>
-  </section>
+  </section>-->
 
 </body>
 
