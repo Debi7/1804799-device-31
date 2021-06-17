@@ -24,13 +24,13 @@
 
   <header class="main-header container">
 
-    <nav class="main-nav">
+    <nav class="main-nav catalog-nav">
       <a class="main-header-logo">
         <img src="icons/logo.svg" width="163" height="35" alt="Логотип сайта Девайс">
       </a>
 
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label for="field-search" hidden>Поиск по сайту</label>
+        <label for="field-search" class="visually-hidden">Поиск по сайту</label>
         <input class="search-text" type="text" name="search" id="field-search" placeholder="Поиск по сайту">
         <button class="btn-search" type="submit">Найти</button>
       </form>
@@ -167,7 +167,7 @@
     </section>
 
     <section class="catalog">
-      <h2 hidden>Каталог</h2>
+      <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img class="catalog-product" src="img/stick_tel.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -281,26 +281,30 @@
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-btn social-btn-vk" href="#">
-            <h2 hidden>Вконтакте</h2>VK
-          </a>
-        </li>
-        <li class="social-item">
           <a class="social-btn social-btn-fb" href="#">
-            <h2 hidden>Фейсбук</h2>FB
+            <img src="icons/icon_facebook.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Фейсбук</h2>
           </a>
         </li>
         <li class="social-item">
           <a class="social-btn social-btn-inst" href="#">
-            <h2 hidden>Инстаграм</h2>instagram
+            <img src="icons/icon_instagram.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Инстаграм</h2>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-btn social-btn-twit" href="#">
+            <img src="icons/icon_twitter.svg" width="32" height="31" alt="fb">
+            <h2 class="visually-hidden">Твиттер</h2>
           </a>
         </li>
       </ul>
     </section>
 
     <p class="footer-copyright">
-      <h2 hidden>Разработано:</h2>
-      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      <h2 class="visually-hidden">Разработано:</h2>
+      <img class="logo-copyright" src="icons/logo_htmlacademy.svg" width="115" height="33" alt="HTML Academy">
+      <h2 class="visually-hidden">HTML Academy</h2>
     </p>
 
   </footer>

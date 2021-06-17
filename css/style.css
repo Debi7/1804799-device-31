@@ -729,7 +729,15 @@ h2 {
 
 
 /*страница каталога*/
-.main-container {}
+
+/*хедер страницы каталога*/
+.main-nav.catalog-nav {
+  min-height: 186px;
+}
+
+.main-container {
+  display: grid;
+}
 
 h1 {
   /*заголовок в каталоге*/
