@@ -106,18 +106,18 @@ img {
   overflow: hidden;
 }
 
-
 /*header*/
 
 /*блок хедер - меню, слайдер*/
 .container {
   width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-header {
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 116px;
 }
 
 /*блок желтый с меню*/
@@ -126,8 +126,8 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 0 44px;
 
-  height: 300px;
   padding-left: 60px;
+  padding-right: 60px;
   background-color: var(--special-yellow-light);
 }
 
@@ -150,16 +150,18 @@ img {
 /*форма поиска с кнопкой найти*/
 .search {
   display: grid;
+  grid-template-columns: 1fr min-content;
   grid-column: 1/2;
 
   width: 440px;
-  height: 50px;
+  padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   margin-bottom: 50px;
 }
 
 /*иконка формы поиска*/
 .search-img {}
-
 
 /*текст в форме поиска*/
 .search-text {
@@ -183,7 +185,6 @@ img {
 /*кнопка найти в хедере*/
 .btn-search {
   display: inline-block;
-  width: 84px;
   height: 50px;
   border: solid 2px;
   background-color: var(--special-yellow-light);
@@ -197,21 +198,17 @@ img {
 .btn-search:hover {
   cursor: pointer;
   transition: all 0.5s ease-out;
-  border: none;
   background-color: var(--basic-black);
   color: var(--basic-white);
 }
 
 .btn-search:active {
-  border: none;
   background-color: var(--basic-black);
   color: var(--basic-white-opacity-03);
 }
 
 /*блок header-nav с войти/сравнить/корзина*/
-.header-nav {
-  display: grid;
-}
+.header-nav {}
 
 /*список header-nav с войти/сравнить/корзина*/
 .nav-list {
@@ -221,11 +218,7 @@ img {
 }
 
 /*каждый пункт header-nav с войти/сравнить/корзина*/
-.nav-item {
-  width: 498px;
-  height: 20px;
-  margin: 0 auto;
-}
+.nav-item {}
 
 /*<a> ссылка с войти/сравнить/корзина*/
 .nav-link {
@@ -235,25 +228,20 @@ img {
   color: var(--basic-black);
 }
 
-.nav-link:first-child {
-  padding-right: 176px;
-}
+.nav-link:first-child {}
 
 /*иконка с войти/сравнить/корзина*/
 .nav-link-login {
   margin-right: 14px;
 }
 
-
-
 /*блок catalog в хедере*/
 .catalog-product {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 44px;
   grid-column: 1/3;
-  TODO
 }
-
-
 
 .catalog-content {
   position: relative;
@@ -261,6 +249,7 @@ img {
 
 /*текст Каталог товаров с иконкой рядом, при нажатии выезжает блок с меню */
 .topmenu {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -297,11 +286,11 @@ img {
 
 .menu-item {
   list-style: none;
-
 }
 
 /*каждый пункт с доставка/гарантии/контакты*/
 .menu-link {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -309,32 +298,31 @@ img {
   color: var(--basic-black);
 }
 
-
 /*блок со слайдом - картинка, слоган, описание*/
 .promo {
+  display: none;
+  padding-top: 44px;
+  margin-top: -80px;
+  background-color: inherit;
+}
+
+.promo-active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 44px;
-
-  background-color: var(--basic-white);
 }
 
 .promo-img {
   /*картинка*/
+  padding-left: 30px;
   grid-column: 1/2;
   grid-row: 1/5;
-  margin-top: -47px;
-  padding-left: 30px;
-  TODO
 }
 
 /*слоган*/
 .tagline {
   display: grid;
-  grid-column: 2/3;
-
   padding-left: 0;
-  margin-top: -36px;
   font-size: 47px;
   line-height: 57px;
   font-weight: 800;
@@ -344,8 +332,6 @@ img {
 
 /*описание под слоганом*/
 .description {
-  display: grid;
-  grid-column: 2/3;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -354,9 +340,14 @@ img {
 
 /*кнопка подробнее и др с желтой полосой*/
 .btn {
+  width: 220px;
+  height: 40px;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  background-color: transparent;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -365,8 +356,6 @@ img {
 }
 
 .btn:hover {
-  width: 220px;
-  height: 40px;
   background-color: var(--special-yellow-dark);
 }
 
@@ -375,9 +364,15 @@ img {
 }
 
 /*характеристики товара в слайдере*/
-.characteristics {}
+.characteristics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 42px auto;
+  grid-gap: 15px 64px;
+}
 
 .characteristics-item {
+  grid-row: 1/2;
   font-size: 36px;
   line-height: 41px;
   font-weight: 300;
@@ -386,8 +381,8 @@ img {
 }
 
 .characteristics-definition {
-  display: inline-block;
-
+  margin: 0px;
+  grid-row: 2/3;
   font-size: 13px;
   line-height: 14px;
   font-weight: 300;
@@ -415,33 +410,21 @@ img {
   cursor: pointer;
 }
 
-/*мейн контейнер*/
-.main-container {
-  max-width: 1160px;
-  margin: 0 auto;
-
-}
+/*мейн*/
 
 /*общий блок - внутри 6 желтых квадратов с иконкой внутри и текстом под ним*/
 .popular-device {
   /*отступы*/
-  margin-top: 116px;
 }
 
 .device-list {
-  list-style-type: none;
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(6, 160px);
-  gap: 0 40px;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 40px;
   padding: 0;
   align-content: center;
 }
-
-.device-list:first-child {
-  gap: 0;
-}
-
-
 
 .device-item {
   width: 160px;
@@ -457,41 +440,41 @@ img {
   color: var(--basic-black);
 }
 
-
 /*блок условия - доставка/гарантия/кредит*/
 .conditions {
-  max-width: 1440px;
-  background-color: var(--basic-grey-light);
-  min-height: 288px;
   display: grid;
+  /*TODO почему грид*/
+  background-color: var(--basic-grey-light);
+  min-height: 320px;
   margin-top: 106px;
 }
 
 .conditions-container {
   display: grid;
-  grid-template-columns: 277px 495px auto;
+  /*почему грид*/
+  grid-template-columns: 277px auto;
   gap: 0 116px;
 }
 
-
-
 /*список с кнопками доставка/гарантия/кредит*/
 .conditions-menu {
-  margin-top: -10px;
   list-style: none;
   display: grid;
+  /*почему грид*/
   grid-column: 1/2;
-  grid-row: 1/4;
 }
 
 .conditions-content {
-  display: grid;
+  display: none;
   grid-column: 2/3;
+}
+
+.conditions-content-active {
+  display: block;
 }
 
 .conditions-heading {
   grid-row: 1/2;
-  margin-top: -29px;
   margin-bottom: 40px;
   font-size: 47px;
   line-height: 57px;
@@ -501,7 +484,6 @@ img {
 }
 
 .conditions-text {
-  grid-row: 2/3;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -517,8 +499,8 @@ img {
 .brands-list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 260px);
-  gap: 0 40px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
   align-content: center;
   padding: 0;
 }
@@ -528,19 +510,15 @@ img {
 }
 
 /*о нас*/
-.about-us__contacts {
+.columns {
   margin-top: 90px;
   margin-bottom: 86px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat (5, 20%);
-  gap: 0 127px;
+  column-gap: 127px;
 }
 
-.about-us {
-  display: grid;
-  grid-column: 1/2;
-}
+.about-us {}
 
 h2 {
   font-size: 47px;
@@ -571,10 +549,7 @@ h2 {
 }
 
 /*контакты*/
-.contacts {
-  display: grid;
-  grid-column: 2/3;
-}
+.contacts {}
 
 .contacts-text {
   margin-bottom: 40px;
@@ -585,24 +560,25 @@ h2 {
 }
 
 .contacts .btn {
-  display: grid;
-  margin-top: 80px;
+  display: flex;
+  align-items: flex-end;
+
 }
 
 
 /*футер*/
 .main-footer {
-  min-height: 324px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 33%);
-  padding-left: 139px;
   background-color: var(--basic-dark);
 }
 
-.footer-logo {
-  margin-top: 64px;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 46px;
+  padding-bottom: 64px;
 }
+
+.footer-logo {}
 
 .footer-logo:hover {
   cursor: pointer;
@@ -658,6 +634,7 @@ h2 {
 }
 
 .footer-phone {
+  justify-self: end;
   grid-column: 3/4;
   grid-row: 2/3;
   font-size: 15px;
@@ -679,7 +656,7 @@ h2 {
 }
 
 .logo-copyright {
-  padding-left: 199px;
+  justify-self: end;
   grid-column: 3/4;
   grid-row: 3/4;
 }
@@ -690,6 +667,10 @@ h2 {
 
 
 /*модальные окна*/
+.modal {
+  display: none;
+}
+
 .modal-close {
   width: 55px;
   height: 55px;
@@ -726,21 +707,18 @@ h2 {
   opacity: 0.4;
 }
 
-
-
 /*страница каталога*/
-
-/*хедер страницы каталога*/
-.main-nav.catalog-nav {
-  min-height: 186px;
-}
-
-.main-container {
+.heading-breadcrumbs {
   display: grid;
+  grid-template-columns: 580px 580px;
+  grid-template-rows: 102px auto;
+  margin-bottom: 50px;
 }
 
 h1 {
   /*заголовок в каталоге*/
+  padding-left: 60px;
+  grid-column: 1/2;
   font-size: 47px;
   line-height: 57px;
   font-weight: 800;
@@ -750,14 +728,23 @@ h1 {
 
 .breadcrumbs {
   list-style: none;
+  padding-left: 60px;
+  grid-row: 2/3;
 }
 
 .breadcrumbs-text {
+  display: inline-grid;
   font-size: 14px;
   line-height: 19px;
   font-weight: 300;
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.catalog-container {
+  display: grid;
+  grid-template-columns: 468px auto;
+  grid-template-rows: repeat (7, 1fr);
 }
 
 .options {
