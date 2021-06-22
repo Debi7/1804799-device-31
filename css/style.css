@@ -595,6 +595,8 @@ h2 {
 }
 
 .navigation-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -623,6 +625,8 @@ h2 {
 
 .footer-menu-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-menu-link {
@@ -744,19 +748,27 @@ h1 {
 .catalog-container {
   display: grid;
   grid-template-columns: 468px auto;
-  grid-template-rows: repeat (7, 1fr);
 }
 
 .options {
   background-color: var(--basic-grey-light);
+  grid-row: 1/7;
 }
 
 .options-text {
+  padding-top: 25px;
+  margin-bottom: 111px;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
   font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-black);
+}
+
+.filters .filter {
+  border: none;
 }
 
 .filter-title {
@@ -791,6 +803,9 @@ h1 {
 }
 
 .sorting-text {
+  padding-left: 72px;
+  padding-top: 25px;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
@@ -802,7 +817,10 @@ h1 {
   list-style: none;
 }
 
-.sorting-item {}
+.sorting-item {
+  display: inline-flex;
+  justify-content: space-between;
+}
 
 .sorting-item:hover {
   opacity: 0.3;
@@ -820,6 +838,9 @@ h1 {
 }
 
 /*стрелки-треугольники*/
+.arrow-up .arrow-down {
+}
+
 .arrow-up:hover,
 .arrow-down:hover {
   opacity: 0.4;
@@ -831,11 +852,17 @@ h1 {
 }
 
 .catalog {
-  background-color: var(--basic-white);
+  background-color: inherit;
+  padding-top: 69px;
+  padding-left: 72px;
+  padding-right: 140px;
 }
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px ;
 }
 
 .catalog-item {}
@@ -864,6 +891,8 @@ h1 {
 }
 
 .pages {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--basic-grey-1);
 }
 
@@ -888,6 +917,8 @@ h1 {
 
 .page-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-number {
