@@ -125,7 +125,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 44px;
-
   padding-left: 60px;
   padding-right: 60px;
   background-color: var(--special-yellow-light);
@@ -152,7 +151,6 @@ img {
   display: grid;
   grid-template-columns: 1fr min-content;
   grid-column: 1/2;
-
   width: 440px;
   padding-left: 24px;
   padding-top: 16px;
@@ -212,9 +210,9 @@ img {
 
 /*список header-nav с войти/сравнить/корзина*/
 .nav-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding: 0;
-
 }
 
 /*каждый пункт header-nav с войти/сравнить/корзина*/
@@ -279,9 +277,9 @@ img {
 
 /*список с доставка/гарантии/контакты*/
 .site-menu {
-  display: grid;
-  grid-column: 2/3;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .menu-item {
