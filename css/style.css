@@ -214,20 +214,22 @@ img {
 }
 
 /*блок header-nav с войти/сравнить/корзина*/
-.header-nav {}
 
 /*список header-nav с войти/сравнить/корзина*/
 .nav-list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 /*каждый пункт header-nav с войти/сравнить/корзина*/
-.nav-item {}
+.nav-item {
+  margin-left: 40px;
+}
 
 .nav-item:first-child {
-  margin-right: 239px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /*<a> ссылка с войти/сравнить/корзина*/
@@ -236,8 +238,6 @@ img {
   line-height: 20px;
   color: var(--basic-black);
 }
-
-.nav-link:first-child {}
 
 /*иконка с войти/сравнить/корзина*/
 .nav-link-login {
@@ -269,7 +269,6 @@ img {
 
 .catalog-content:hover .submenu {
   display: flex;
-  cursor: pointer;
 }
 
 /*выезжающее горизонтальное меню*/
@@ -278,24 +277,28 @@ img {
   height: 146px;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin-top: 18px;
-  padding: 0;
-  list-style-type: none;
+  padding: 0 50px;
+  list-style: none;
   position: absolute;
+  left: -60px;
+  right: -60px;
   background-color: var(--special-yellow-light);
 }
 
 .submenu-item {
-  margin-bottom: 20px;
   margin-right: 61px;
 }
 
 .submenu-item:last-child {
-  margin-bottom: 118px;
+  margin-bottom: 60px;
   margin-right: 0;
 }
 
 .submenu-link {
+  display: block;
+  padding: 10px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -303,32 +306,29 @@ img {
 }
 
 .submenu-link:hover {
-  cursor: pointer;
   opacity: 0.6;
 }
 
 .submenu-link:active {
-  cursor: pointer;
   opacity: 0.3;
 }
 
 /*список с доставка/гарантии/контакты*/
 .site-menu {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin-top: 0;
   margin-bottom: 18px;
-  align-items: flex-start;
 }
 
 .menu-item {
-  list-style: none;
+  margin-right: 38px;
 }
 
 .menu-item:last-child {
-  margin-left: 111px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 /*каждый пункт с доставка/гарантии/контакты*/
@@ -362,7 +362,7 @@ img {
   /*картинка*/
   padding-left: 30px;
   grid-column: 1/2;
-  grid-row: 1/6;
+  grid-row: 1/5;
 }
 
 /*слоган*/
@@ -434,32 +434,42 @@ img {
 
 /*блок с круглыми кнопками слайдера*/
 .slider-btn {
-  display: flex;
   position: absolute;
   left: 800px;
   right: 88px;
   bottom: 127px;
+  display: flex;
   justify-content: flex-end;
 }
 
 .slider-change {
   list-style: none;
+  margin-right: 18px;
 }
 
 /*круглые кнопки слайдера*/
 .btn-change {
-  margin-right: 18px;
   width: 12px;
   height: 12px;
-  border: solid 1px;
+  padding: 0;
+  border: 1px solid black;
   border-radius: 12px;
   background-color: var(--basic-white);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.btn-change:hover {
+.btn-change::after {
+  display: none;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.btn-change:hover::after {
+  display: block;
   cursor: pointer;
 }
 
@@ -569,7 +579,14 @@ img {
   column-gap: 127px;
 }
 
-.about-us {}
+.about-us {
+  display: flex;
+  flex-direction: column
+}
+
+.about-us .btn {
+  align-self: start;
+}
 
 h2 {
   font-size: 47px;
@@ -593,7 +610,7 @@ h2 {
 }
 
 .about-us-item {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 800;
@@ -601,8 +618,6 @@ h2 {
 }
 
 /*контакты*/
-.contacts {}
-
 .contacts-text {
   margin-bottom: 40px;
   font-size: 15px;
@@ -612,12 +627,11 @@ h2 {
 }
 
 .contacts img {
-  margin-bottom: 45px;
+  margin-bottom: 85px;
 }
 
 .contacts .btn {
   justify-self: start;
-  /* align-self: end; */
 }
 
 
@@ -633,9 +647,7 @@ h2 {
   padding-bottom: 64px;
 }
 
-.footer-logo {
-  align-self: center;
-}
+.footer-logo {}
 
 .footer-logo:hover {
   cursor: pointer;
@@ -656,6 +668,7 @@ h2 {
   justify-content: space-around;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -666,27 +679,28 @@ h2 {
 }
 
 .footer-address {
-  align-self: center;
+  align-self: flex-start;
   grid-column: 1/2;
   grid-row: 2/3;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
   color: var(--basic-white);
+  padding: 0;
+  margin: 0;
 }
 
 .footer-menu {
   grid-column: 2/3;
   grid-row: 2/3;
-
 }
 
 .footer-menu-list {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  justify-self: center;
   padding: 0;
+  margin: 0;
 }
 
 .footer-menu-link {
@@ -872,7 +886,6 @@ h2 {
 
 .sorting {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--basic-grey-light);
 }
@@ -888,25 +901,14 @@ h2 {
 }
 
 .sorting-list {
+  margin-right: auto;
   padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
-
 
 .sorting-item {
-  padding-right: 30px;
-}
-
-
-.sorting-item:hover {
-  opacity: 0.3;
-}
-
-.sorting-item:active {
-  opacity: 1;
+  margin-right: 30px;
 }
 
 .sorting-link {
@@ -916,17 +918,29 @@ h2 {
   color: var(--basic-black);
 }
 
-/*стрелки-треугольники*/
-.sorting-btn{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 45px;
-}
-.arrow-up {
-  margin-right: 23px;
+.sorting-link:hover {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
+.sorting-link:active {
+  opacity: 1;
+}
+
+/*стрелки-треугольники*/
+.sorting-btn {
+  display: flex;
+  margin-left: 45px;
+  margin-right: -10px;
+}
+
+.arrow-up,
 .arrow-down {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
 
 .arrow-up:hover,
@@ -994,7 +1008,9 @@ h2 {
 }
 
 .btn-pages {
-  align-self: center;
+  display: flex;
+  align-items:center;
+  padding: 20px;
   border: none;
   font-size: 16px;
   line-height: 19px;
