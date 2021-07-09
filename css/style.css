@@ -70,7 +70,7 @@
 }
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -141,6 +141,7 @@ img {
   width: 163px;
   height: 34px;
   margin-top: -20px;
+  margin-bottom: 16px;
 }
 
 .main-header-logo:hover {
@@ -158,17 +159,13 @@ img {
   grid-template-columns: 1fr min-content;
   grid-column: 1/2;
   width: 440px;
-  padding-left: 24px;
-  padding-top: 16px;
-  padding-bottom: 14px;
-  margin-bottom: 50px;
+  height: 50px;
+  margin-bottom: 30px;
 }
-
-/*иконка формы поиска*/
-.search-img {}
 
 /*текст в форме поиска*/
 .search-text {
+  padding-left: 37px;
   border-style: none;
   background-color: var(--special-yellow-light);
   font-size: 15px;
@@ -188,8 +185,7 @@ img {
 
 /*кнопка найти в хедере*/
 .btn-search {
-  display: inline-block;
-  height: 50px;
+  display: none;
   border: solid 2px black;
   background-color: var(--special-yellow-light);
   font-size: 15px;
@@ -258,6 +254,7 @@ img {
 
 /*текст Каталог товаров с иконкой рядом, при нажатии выезжает блок с меню */
 .topmenu {
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
@@ -333,6 +330,7 @@ img {
 
 /*каждый пункт с доставка/гарантии/контакты*/
 .menu-link {
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 22px;
@@ -341,54 +339,14 @@ img {
   color: var(--basic-black);
 }
 
-/*блок со слайдом - картинка, слоган, описание*/
-.slider {
-  position: relative;
-}
-
-.promo {
-  display: none;
-  padding-top: 44px;
-  margin-top: -80px;
-}
-
-.promo-active {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 44px;
-}
-
-.promo-img {
-  /*картинка*/
-  padding-left: 30px;
-  grid-column: 1/2;
-  grid-row: 1/5;
-}
-
-/*слоган*/
-.tagline {
-  display: grid;
-  padding-left: 0;
-  font-size: 47px;
-  line-height: 57px;
-  font-weight: 800;
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: var(--basic-black);
-}
-
-/*описание под слоганом*/
-.description {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 300;
-  color: var(--basic-black);
-}
-
 /*кнопка подробнее и др с желтой полосой*/
 .btn {
-  justify-self: start;
-  padding: 9px 43px;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+  padding: 9px 14px 9px 20px;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -407,14 +365,68 @@ img {
   color: var(--basic-black-opacity-03);
 }
 
+/*блок со слайдом - картинка, слоган, описание*/
+.slider {
+  position: relative;
+}
+
+.promo {
+  display: none;
+}
+
+.promo-active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 44px;
+}
+
+.promo-img {
+  /*картинка*/
+  padding-left: 30px;
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+
+/*слоган*/
+.tagline {
+  margin-top: 109px;
+  margin-bottom: 26px;
+  display: grid;
+  padding-left: 0;
+  font-size: 47px;
+  line-height: 57px;
+  font-weight: 800;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+}
+
+/*описание под слоганом*/
+.description {
+  margin: 0 0 52px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: var(--basic-black);
+}
+
+.slider .btn {
+  justify-self: start;
+  min-width: 220px;
+  margin-bottom: 50px;
+}
+
 /*характеристики товара в слайдере*/
 .characteristics {
+  margin: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
   row-gap: 15px;
+  column-gap: 64px;
 }
 
 .characteristics-item {
+  letter-spacing: 0.12em;
   grid-row: 1/2;
   font-size: 36px;
   line-height: 41px;
@@ -424,6 +436,8 @@ img {
 }
 
 .characteristics-definition {
+  letter-spacing: 0.08em;
+  grid-row: 2/3;
   margin: 0px;
   font-size: 13px;
   line-height: 14px;
@@ -444,7 +458,7 @@ img {
 
 .slider-change {
   list-style: none;
-  margin-right: 18px;
+  margin-left: 18px;
 }
 
 /*круглые кнопки слайдера*/
@@ -452,10 +466,11 @@ img {
   width: 12px;
   height: 12px;
   padding: 0;
-  border: 1px solid black;
+  border: 1px solid var(--basic-black);
   border-radius: 12px;
   background-color: var(--basic-white);
   display: flex;
+  cursor: pointer;
 }
 
 .btn-change::after {
@@ -465,12 +480,11 @@ img {
   height: 6px;
   margin: auto;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--basic-black);
 }
 
-.btn-change:hover::after {
+.slider-change-active .btn-change::after {
   display: block;
-  cursor: pointer;
 }
 
 /*мейн*/
@@ -512,22 +526,31 @@ img {
 
 .conditions-container {
   display: grid;
-  /*почему грид*/
-  grid-template-columns: 277px auto;
+  grid-template-columns: 284px auto;
   gap: 0 116px;
 }
 
 /*список с кнопками доставка/гарантия/кредит*/
 .conditions-menu {
   list-style: none;
-  display: grid;
-  /*почему грид*/
   grid-column: 1/2;
+  padding-top: 54px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.conditions-item {
+  margin-bottom: 22px;
+}
+
+.conditions-item .btn {
+  min-width: 160px;
 }
 
 .conditions-content {
   display: none;
   grid-column: 2/3;
+  padding-right: 260px;
 }
 
 .conditions-content-active {
@@ -535,6 +558,7 @@ img {
 }
 
 .conditions-heading {
+  letter-spacing: 0.2em;
   grid-row: 1/2;
   margin-bottom: 40px;
   font-size: 47px;
@@ -545,6 +569,7 @@ img {
 }
 
 .conditions-text {
+  letter-spacing: 0.1em;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -564,6 +589,7 @@ img {
   column-gap: 40px;
   align-content: center;
   padding: 0;
+  margin: 0;
 }
 
 .brands-item {
@@ -572,23 +598,21 @@ img {
 
 /*о нас*/
 .columns {
-  margin-top: 90px;
   margin-bottom: 86px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 127px;
+  column-gap: 40px;
 }
 
 .about-us {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
-.about-us .btn {
-  align-self: start;
-}
-
-h2 {
+.about-us-heading,
+.contacts-heading {
+  margin-bottom: 40px;
+  letter-spacing: 0.2em;
   font-size: 47px;
   line-height: 57px;
   font-weight: 800;
@@ -597,6 +621,8 @@ h2 {
 }
 
 .about-us-text {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
@@ -605,16 +631,22 @@ h2 {
 
 .about-us-list {
   list-style: none;
-  margin-top: 60px;
-  margin-bottom: 44px;
+  padding-left: 32px;
+  margin: 0;
+  padding-top: 18px;
+  margin-bottom: 54px;
 }
 
 .about-us-item {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 800;
   color: var(--basic-black);
+}
+
+.about-us .btn {
+  align-self: start;
 }
 
 /*контакты*/
@@ -627,7 +659,7 @@ h2 {
 }
 
 .contacts img {
-  margin-bottom: 85px;
+  margin-bottom: 67px;
 }
 
 .contacts .btn {
@@ -643,11 +675,14 @@ h2 {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
   padding-top: 46px;
   padding-bottom: 64px;
 }
 
-.footer-logo {}
+.footer-logo {
+  margin-top: 18px;
+}
 
 .footer-logo:hover {
   cursor: pointer;
@@ -665,10 +700,14 @@ h2 {
 
 .navigation-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.navigation-item {
+  margin-left: 38px;
 }
 
 .navigation-link {
@@ -698,12 +737,18 @@ h2 {
 .footer-menu-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
+.footer-menu-item {
+  margin: 0 18px;
+}
+
 .footer-menu-link {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -727,11 +772,27 @@ h2 {
 .footer-social {
   grid-column: 2/3;
   grid-row: 3/4;
+  padding-top: 20px;
+}
+
+.social-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
 }
 
 /*список иконки соц сетей*/
 .social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  margin: 0 10px;
 }
 
 .logo-copyright {
@@ -937,7 +998,7 @@ h2 {
 .arrow-up,
 .arrow-down {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
@@ -1009,7 +1070,7 @@ h2 {
 
 .btn-pages {
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 20px;
   border: none;
   font-size: 16px;
