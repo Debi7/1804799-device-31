@@ -806,6 +806,14 @@ img {
   background-image: url('../img/icons/icon-facebook.svg');
 }
 
+.social-btn-inst {
+  background-image: url('../img/icons/icon-instagram.svg');
+}
+
+.social-btn-twit {
+  background-image: url('../img/icons/icon-twitter.svg');
+}
+
 .logo-copyright {
   justify-self: end;
   align-self: start;
