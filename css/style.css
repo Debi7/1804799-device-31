@@ -701,7 +701,7 @@ img {
 }
 
 .footer-navigation {
-  grid-column: 3/4;
+  grid-column: 2/4;
   grid-row: 1/2;
 }
 
@@ -714,7 +714,7 @@ img {
 }
 
 .navigation-item {
-  margin-left: 38px;
+  margin-left: 51px;
 }
 
 .navigation-link {
@@ -776,7 +776,6 @@ img {
   padding: 0;
 }
 
-
 /*блок иконки соц сетей*/
 .footer-social {
   grid-column: 2/3;
@@ -804,7 +803,7 @@ img {
 }
 
 .social-btn-fb {
-  background-image: url(..img/icons/icon-facebook.svg) no-repeat;
+  background-image: url('../img/icons/icon-facebook.svg');
 }
 
 .logo-copyright {
@@ -863,11 +862,11 @@ img {
 /*страница каталога*/
 
 /*каждый пункт header-nav с войти/сравнить/корзина*/
-.header-nav-catalog .nav-item {
+.header-nav-authorized .nav-item {
   margin-left: 50px;
 }
 
-.header-nav-catalog .nav-item:first-child {
+.header-nav-authorized .nav-item:first-child {
   margin-left: 0;
   margin-right: auto;
 }
@@ -939,7 +938,7 @@ img {
 }
 
 .filter {
-  /* margin-top: 53px; */
+  margin-top: 53px;
 }
 
 .filter-title {
