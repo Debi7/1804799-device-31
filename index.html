@@ -94,12 +94,11 @@
     </nav>
 
     <div class="slider">
-
       <section class="promo">
         <a class="promo-img" href="catalog.html">
           <img src="img/stick.png" width="384" height="486" alt="Cелфи-палка">
         </a>
-
+        <span class="numbers">03</span>
         <p class="tagline">Делай селфи,
           как Бен Стиллер!</p>
         <p class="description">Самая длинная палка для селфи доступна в нашем магазине.
@@ -121,7 +120,7 @@
         <a class="promo-img" href="catalog.html">
           <img src="img/bracelet.png" width="345" height="485" alt="Фитнес браслет">
         </a>
-
+        <span class="numbers">02</span>
         <p class="tagline">Худеем
           правильно!</p>
         <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -139,7 +138,7 @@
         <a class="promo-img" href="catalog.html">
           <img src="img/quadcopter.png" width="526" height="334" alt="Квадракоптер">
         </a>
-
+        <span class="numbers">01</span>
         <p class="tagline">Порхает как бабочка, жалит как пчела!</p>
         <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.</p>
@@ -179,32 +178,32 @@
     <section class="popular-device container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="device-list">
-        <li class="device-item">
+        <li class="device-item virtual">
           <a href="catalog.html">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
-        <li class="device-item">
+        <li class="device-item monopod">
           <a href="catalog.html">
-            <h3>Моноподы для селфи</h3>
+            <h3>Моноподы<br>для селфи</h3>
           </a>
         </li>
-        <li class="device-item">
+        <li class="device-item camera">
           <a href="catalog.html">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
-        <li class="device-item">
+        <li class="device-item fitness">
           <a href="catalog.html">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
-        <li class="device-item">
+        <li class="device-item clock">
           <a href="catalog.html">
             <h3>Умные часы</h3>
           </a>
         </li>
-        <li class="device-item">
+        <li class="device-item copter">
           <a href="catalog.html">
             <h3>Квадрокоптеры</h3>
           </a>
@@ -216,7 +215,7 @@
       <h2 class="visually-hidden">Условия</h2>
       <div class="conditions-container container">
         <ul class="conditions-menu">
-          <li class="conditions-item">
+          <li class="conditions-item conditions-item-active">
             <button class="btn" type="button">Доставка</button>
           </li>
           <li class="conditions-item">
@@ -365,15 +364,15 @@
         </ul>
       </section>
 
-      <p class="footer-copyright">
-        <h3 class="visually-hidden">Разработано:</h3>
+      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span class="visually-hidden">Разработано:</span>
         <img class="logo-copyright" src="img/logo-htmlacademy.svg" width="115" height="33" alt="HTML Academy">
-        <h2 class="visually-hidden">HTML Academy</h2>
-      </p>
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </div>
   </footer>
 
-  <section class="modal modal-map">
+  <section class="modal modal-map hidden">
     <h2 class="visually-hidden">Карта</h2>
     <img class="map-img" src="img/map-big.png" width="960" height="572" alt="карта">
     <button class="modal-close" type="button">
@@ -381,23 +380,32 @@
     </button>
   </section>
 
-  <section class="modal modal-feedback">
-    <h2 class="visually-hidden">Форма для обратной связи</h2>
-    <form class="feedback" method="post" action="https://echo.htmlacademy.ru">
-      <label class="field-text" for="user-name">Ваше имя:</label>
-      <input class="field-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+  <section class="modal modal-feedback hidden">
+    <h2 class="modal-title visually-hidden">Форма для обратной связи</h2>
 
-      <label class="field-text" for="user-email">Ваш e-mail:</label>
-      <input class="field-input" type="email" name="user-email" id="user-email" placeholder="email@example.com">
-
-      <label class="field-text" for="user-message">Текст письма:</label>
-      <textarea class="field-input" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
-
-      <button class="btn" type="submit">Отправить</button>
-    </form>
     <button class="modal-close" type="button">
       <h2 class="visually-hidden">Закрыть</h2>
     </button>
+
+    <form class="modal-form feedback" method="post" action="https://echo.htmlacademy.ru">
+
+      <p class="modal-field">
+        <label class="field-text" for="user-name">Ваше имя:</label>
+        <input class="field-input" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+
+      <p class="modal-field">
+        <label class="field-text" for="user-email">Ваш e-mail:</label>
+        <input class="field-input" type="email" name="user-email" id="user-email" placeholder="email@example.com">
+      </p>
+
+      <p class="modal-field modal-field-wide">
+        <label class="field-text" for="user-message">Текст письма:</label>
+        <textarea class="field-input" name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <button class="btn modal-send" type="submit">Отправить</button>
+    </form>
   </section>
 
 </body>
