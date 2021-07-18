@@ -41,7 +41,9 @@
 /*Variables*/
 :root {
   --basic-black: #000000;
+  --basic-black-opacity-01: rgba(0, 0, 0, 0.1);
   --basic-black-opacity-03: rgba(0, 0, 0, 0.3);
+  --basic-black-opacity-04: rgba(0, 0, 0, 0.4);
 
   --basic-dark: #363636;
   --basic-grey: #464646;
@@ -53,8 +55,13 @@
   --special-yellow-dark: #F0C52E;
   --special-yellow-light: #F7E296;
   --special-green: #91C92F;
+  --special-grey-07: rgba(238, 238, 238, 0.7);
   --basic-white-opacity-03: rgba(255, 255, 255, 0.3);
   --special-yellow-opacity-01: rgba(255, 198, 0, 1);
+  --special-grey: #ababab;
+  --special-dark: #283136;
+  --special-grey-1: #cfcfcf;
+  --special-grey-2:#dcdcdc;
 
   /*status*/
   --special: #F6DADA;
@@ -64,7 +71,6 @@
   --basic-grey-white: rgb(242, 242, 242);
   --basic-grey-1: rgb(235, 235, 235);
   --basic-grey-2: rgb(217, 217, 217);
-  --basic-grey-3: rgba(238, 238, 238, 0.7);
 }
 
 /*Global*/
@@ -421,7 +427,7 @@ img {
   font-weight: 800;
   font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-black);
-  background-image: linear-gradient(#F0C52E 8px, white 8px);
+  background-image: linear-gradient(var(--special-yellow-dark) 8px, var(--basic-white) 8px);
   background-size: auto 8px;
   background-repeat: no-repeat;
   background-position: center;
@@ -472,7 +478,7 @@ img {
   display: none;
   grid-template-columns: 1fr 1fr;
   gap: 0 44px;
-  background-image: linear-gradient(#F7E296 146px, white 100px);
+  background-image: linear-gradient(var(--special-yellow-light) 146px, var(--basic-white) 100px);
   margin-bottom: 76px;
   margin-top: -30px;
 }
@@ -685,7 +691,7 @@ img {
   background-color: var(--basic-grey-light);
   padding-bottom: 106px;
   margin-top: 85px;
-  background-image: linear-gradient(white 100px, #E5E5E5 100px);
+  background-image: linear-gradient(var(--basic-white) 100px, var(--basic-grey-light) 100px);
 }
 
 .conditions-container {
@@ -1103,7 +1109,7 @@ img {
   margin: auto;
   padding: 63px 100px 84px;
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--basic-black-opacity-04);
 }
 
 .modal-title {
@@ -1270,8 +1276,8 @@ img {
 
 .catalog-container {
   background-image:
-    linear-gradient(#DCDCDC 70px, #E5E5E5 70px),
-    linear-gradient(#E5E5E5 70px, white 70px);
+    linear-gradient(var(--special-grey-2) 70px, var(--basic-grey-light) 70px),
+    linear-gradient(var(--basic-grey-light) 70px, var(--basic-white) 70px);
   background-size: 50% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: -252px 0, 0 0;
@@ -1347,7 +1353,7 @@ img {
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--basic-black-opacity-01);
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -1355,7 +1361,7 @@ img {
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #91C92F;
+  background: var(--special-green);
 }
 
 .range-controls .toggle {
@@ -1365,10 +1371,10 @@ img {
   width: 20px;
   height: 20px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-grey);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--special-grey-1);
   cursor: pointer;
 }
 
@@ -1396,7 +1402,7 @@ img {
 
 .price-controls input {
   margin-left: 2px;
-  color: #283136;
+  color: var(--special-dark);
   border: none;
   background-color: transparent;
   font-family: inherit;
@@ -1430,7 +1436,7 @@ img {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  border: 2px solid black;
+  border: 2px solid var(--basic-black);
   margin-right: 18px;
 }
 
@@ -1468,7 +1474,7 @@ img {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  border: 2px solid black;
+  border: 2px solid var(--basic-black);
   border-radius: 50%;
   margin-right: 18px;
 }
@@ -1594,7 +1600,7 @@ img {
   top: 0;
   width: 100%;
   content: "";
-  background-color: rgba(238, 238, 238, 0.7);
+  background-color: var(--special-grey-07);
   height: 381px;
 }
 
