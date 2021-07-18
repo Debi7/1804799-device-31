@@ -61,7 +61,7 @@
   --special-grey: #ababab;
   --special-dark: #283136;
   --special-grey-1: #cfcfcf;
-  --special-grey-2:#dcdcdc;
+  --special-grey-2: #dcdcdc;
 
   /*status*/
   --special: #F6DADA;
@@ -1407,6 +1407,9 @@ img {
   background-color: transparent;
   font-family: inherit;
   font-size: 14px;
+  -moz-appearance: textfield;
+  width: 100%;
+  padding: 0;
 }
 
 .filter-list {
