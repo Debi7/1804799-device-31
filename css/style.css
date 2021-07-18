@@ -856,15 +856,36 @@ img {
 }
 
 .about-us-item {
+  position: relative;
   margin-bottom: 15px;
   font-size: 16px;
   line-height: 28px;
   font-weight: 800;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-black);
 }
 
+.about-us-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--basic-grey-light);
+  opacity: 1;
+  left: -34px;
+  top: 13px;
+}
+
+
+
+
+
+
+
 .about-us .btn {
   align-self: start;
+  padding-left: 22px;
 }
 
 /*контакты*/
@@ -897,6 +918,7 @@ img {
 
 .contacts .btn {
   justify-self: start;
+  padding-left: 38px;
 }
 
 /*футер*/
@@ -1303,6 +1325,7 @@ img {
   line-height: 17px;
   font-weight: 800;
   font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.1em;
   color: var(--basic-black);
 }
 
