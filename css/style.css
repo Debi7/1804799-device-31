@@ -883,12 +883,6 @@ img {
   top: 13px;
 }
 
-
-
-
-
-
-
 .about-us .btn {
   align-self: start;
   padding-left: 22px;
@@ -930,10 +924,18 @@ img {
 /*футер*/
 .main-footer {
   background-color: var(--basic-dark);
-  position: relative;
 }
 
-.main-footer::after {
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  padding-top: 46px;
+  padding-bottom: 37px;
+}
+
+.footer::after {
   content: "";
   position: absolute;
   display: block;
@@ -941,15 +943,7 @@ img {
   height: 7px;
   background-color: var(--special-yellow-opacity-01);
   top: 239px;
-  left: 178px;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  padding-top: 46px;
-  padding-bottom: 37px;
+  left: 0px;
 }
 
 .footer-logo {
