@@ -254,6 +254,14 @@ img {
   margin-left: 40px;
 }
 
+.nav-item:hover {
+  opacity: 0.6;
+}
+
+.nav-item:active {
+  opacity: 0.3;
+}
+
 .nav-item:first-child {
   margin-left: 0;
   margin-right: auto;
@@ -267,7 +275,6 @@ img {
   padding: 0;
   background-repeat: no-repeat;
   padding-left: 26px;
-
 }
 
 /*иконка с войти/сравнить/корзина*/
@@ -279,13 +286,11 @@ img {
 .nav-link-compare {
   background-image: url(../img/icons/compare.svg);
   background-position: left center;
-
 }
 
 .nav-link-basket {
   background-image: url(../img/icons/basket.svg);
   background-position: left center;
-
 }
 
 .nav-link-logout {
@@ -327,6 +332,14 @@ img {
   font-family: "Gilroy", "Arial", sans-serif;
   color: var(--basic-black);
   margin-bottom: 18px;
+}
+
+.topmenu:hover {
+  opacity: 0.6;
+}
+
+.topmenu:active {
+  opacity: 0.3;
 }
 
 .topmenu img {
@@ -399,6 +412,14 @@ img {
 .menu-item:last-child {
   margin-right: 0;
   margin-left: auto;
+}
+
+.menu-item:hover {
+  opacity: 0.6;
+}
+
+.menu-item:active {
+  opacity: 0.3;
 }
 
 /*каждый пункт с доставка/гарантии/контакты*/
@@ -1136,7 +1157,18 @@ img {
 .modal-field input,
 .modal-field textarea {
   padding: 15px;
-  border: 2px solid grey;
+  border: none;
+}
+
+.modal-field input:hover,
+.modal-field textarea:hover {
+  background-color: #EAEAEA;
+}
+
+.modal-field input:active,
+.modal-field textarea:active {
+  background-color: var(--basic-white);
+  border: 2px solid #F7E296;
 }
 
 .modal-field textarea {
@@ -1257,12 +1289,21 @@ img {
   align-items: center;
 }
 
-.breadcrumbs-text:last-child::after {
-  display: none;
-}
-
 .breadcrumbs-text a {
   opacity: 0.3;
+}
+
+.breadcrumbs-text a:hover {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.breadcrumbs-text a:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs-text:last-child::after {
+  display: none;
 }
 
 .breadcrumbs-text:last-child {
@@ -1277,6 +1318,7 @@ img {
   width: 6px;
   height: 4px;
   margin-left: 18px;
+  opacity: 1;
 }
 
 .catalog-container {
@@ -1418,6 +1460,7 @@ img {
   -moz-appearance: textfield;
   width: 100%;
   padding: 0;
+  min-width: 50px;
 }
 
 .filter-list {
@@ -1536,6 +1579,7 @@ img {
 
 .sorting-item {
   margin-right: 30px;
+  opacity: 0.3;
 }
 
 .sorting-link {
@@ -1545,12 +1589,16 @@ img {
   color: var(--basic-black);
 }
 
-.sorting-link:hover {
-  cursor: pointer;
-  opacity: 0.3;
+.sorting-item:first-child {
+  opacity: 1;
 }
 
-.sorting-link:active {
+.sorting-item:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.sorting-item:active {
   opacity: 1;
 }
 
@@ -1657,6 +1705,15 @@ img {
   line-height: 17px;
   font-weight: 300;
   color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.compare-add:hover {
+  opacity: 1;
+}
+
+.compare-add:active {
+  opacity: 0.3;
 }
 
 .catalog-item:hover .btn,
